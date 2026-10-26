@@ -23,7 +23,7 @@ export interface SalesReport {
 export const fetchProductCatalog = (): Promise<Product[]> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (Math.random() < 0.8) {
+      if (Math.random() < 0) {
         const products: Product[] = [
           { id: 1, name: "Laptop", price: 1200 },
           { id: 2, name: "Headphones", price: 200 },

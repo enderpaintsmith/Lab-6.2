@@ -6,9 +6,9 @@ const errors_1 = require("./errors");
 const fetchProductCatalog = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (Math.random() < 0) {
+            if (Math.random() < 1) {
                 const products = [
-                    { id: 1, name: "Laptop", price: 1200 },
+                    { id: 1, name: "", price: 1200 },
                     { id: 2, name: "Headphones", price: 200 },
                 ];
                 if (products.some(product => !product.name || !Number.isFinite(product.price))) {
